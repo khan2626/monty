@@ -30,9 +30,6 @@ typedef struct build_s
   int l;
 }build_t;
 extern build_t build;
-
-
-
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -47,9 +44,9 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 void add(stack_t **top, unsigned int count);
-void f_push(stack_t **top, unsigned int count);
-void f_swap(stack_t **top, unsigned int count);
-void f_pop(stack_t **top, unsigned int count);
-void f_pint(stack_t **top, unsigned int count);
-void f_pall(stack_t **top, unsigned int count);
+void push(stack_t **top, unsigned int count);
+void swap(stack_t **top, unsigned int count);
+void pop(stack_t **top, unsigned int count);
+void pint(stack_t **top, unsigned int count);
+void pall(stack_t **top, unsigned int count);
 #endif
