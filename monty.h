@@ -1,5 +1,5 @@
-#ifndef MONTY_H_
-#define MONTY_H_
+#ifndef _MONTY_H_
+#define _MONTY_H_
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -22,6 +22,14 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
+/**
+ * struct build_s - it has variables(ag, file, line number
+ * @ag: argument parameter
+ * @file: pointer to monty
+ * @data: line_number
+ * @l: flag
+ * Description: it holds values
+ */
 typedef struct build_s
 {
   FILE *file;
