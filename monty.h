@@ -1,5 +1,5 @@
-#ifndef MONTY-H
-#define MONTY_H
+#ifndef MONTY_H_
+#define MONTY_H_
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -49,4 +49,5 @@ void swap(stack_t **top, unsigned int count);
 void pop(stack_t **top, unsigned int count);
 void pint(stack_t **top, unsigned int count);
 void pall(stack_t **top, unsigned int count);
+void nop(stack_t **head, unsigned int count);
 #endif
