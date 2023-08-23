@@ -6,7 +6,7 @@
  * @count: line_number
  * Return: Nothing
  */
-void f_pop(stack_t **top, unsigned int count)
+void pop(stack_t **top, unsigned int count)
 {
   stack_t *temp;
 
