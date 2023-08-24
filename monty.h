@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <ctype.h>
-#include <fctnl.h>
+#include <fcntl.h>
 #include <string.h>
 #include <unistd.h>
 /**
@@ -58,4 +58,7 @@ void pop(stack_t **top, unsigned int count);
 void pint(stack_t **top, unsigned int count);
 void pall(stack_t **top, unsigned int count);
 void nop(stack_t **head, unsigned int count);
+void addqueue(stack_t **top, unsigned int n);
+void free_stack(stack_t *top);
+void addnode(stack_t **top, int n);
 #endif

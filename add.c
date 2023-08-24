@@ -18,13 +18,13 @@ void add(stack_t **top, unsigned int count)
     }
   if (length < 2)
     {
-      fprintf(stderr, "L%d: can't add, stack too short\n");
+      fprintf(stderr, "L%d: can't add, stack too short\n", count);
       free(build.file);
       free(build.data);
       free_stack(*top);
       exit(EXIT_FAILURE);
     }
-  h = *head;
+  h = *top;
   sum = h->n + h->next->n;
   h->next->n = sum;
   *top = h->next;

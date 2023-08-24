@@ -19,7 +19,7 @@ void swap(stack_t **top, unsigned int count)
     }
   if (length < 2)
     {
-      fprintf(stderr, "L%d: an't swap, stack too short\n");
+      fprintf(stderr, "L%d: an't swap, stack too short\n", count);
       free(build.file);
       free(build.data);
       free_stack(*top);
@@ -27,6 +27,6 @@ void swap(stack_t **top, unsigned int count)
     }
   h = *top;
   temp = h->n;
-  h->next = h->next->n;
+  h->n = h->next->n;
   h->next->n = temp;
 }

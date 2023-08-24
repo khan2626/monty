@@ -6,7 +6,7 @@
  * @count: line_number
  * Return: Nothing
  */
-void nop(stack_t **head, unsigned int counter)
+void nop(stack_t **head, unsigned int count)
 {
   (void) count;
   (void) head;

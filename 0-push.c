@@ -5,9 +5,9 @@
  * @count: it counts line_number
  * Return: no return
  */
-void push(stack_t *head, unsigned int count)
+void m_push(stack_t **top, unsigned int count)
 {
-  int num, i = 0, flag = 0;
+  int n, i = 0, flag = 0;
 
   if (build.ag)
     {
@@ -18,12 +18,12 @@ void push(stack_t *head, unsigned int count)
 	  if (build.ag[i] > 57 || build.ag[i] < 48)
 	    flag = 1;
 	}
-      if (flG == 1)
+      if (flag == 1)
 	{
 	  fprintf(stderr, "L%d: usage: push integer\n", count);
 	  fclose(build.file);
 	  free(build.data);
-	  free_stack(*head);
+	  free_stack(*top);
 	  exit(EXIT_FAILURE);
 	}
     }
@@ -32,13 +32,13 @@ void push(stack_t *head, unsigned int count)
       fprintf(stderr, "L%d: usage: push integer\n", count);
           fclose(build.file);
           free(build.data);
-          free_stack(*head);
+          free_stack(*top);
           exit(EXIT_FAILURE);
     }
       n = atoi(build.ag);
 
       if (build.l == 0)
-	addnode(head, n);
+	addnode(top, n);
       else
-	addqueue(head, n);
+	addqueue(top, n);
 }    

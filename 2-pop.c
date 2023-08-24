@@ -18,7 +18,7 @@ void pop(stack_t **top, unsigned int count)
       free_stack(*top);
       exit(EXIT_FAILURE);
     }
-  temp - *top;
+  temp = *top;
   *top = (*top)->next;
   free(temp);
 }

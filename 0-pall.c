@@ -8,7 +8,7 @@
  */
 void pall(stack_t **top, unsigned int count)
 {
-  stack *temp;
+  stack_t *temp;
   (void)count;
 
   temp = *top;
@@ -18,6 +18,6 @@ void pall(stack_t **top, unsigned int count)
   while (temp != NULL)
     {
       printf("%d\n", temp->n);
-      temp = temp-next;
+      temp = temp->next;
     }
 }
