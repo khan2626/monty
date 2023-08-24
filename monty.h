@@ -63,7 +63,7 @@ void m_nop(stack_t **head, unsigned int count);
 void addqueue(stack_t **top, unsigned int n);
 void free_stack(stack_t *top);
 void addnode(stack_t **top, int n);
-char getline(char **data, size_t *size, FILE *file);
 int execute(char *data, stack_t **stack, unsigned int count, FILE *file);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 #endif
