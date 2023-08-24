@@ -16,6 +16,15 @@ int execute(char *data, stack_t **stack, unsigned int count, FILE *file)
 			 {"swap", m_swap},
 			 {"add", m_add},
 			 {"nop", m_nop},
+			 {"sub", m_sub},
+			 {"div", m_div},
+			 {"mul", m_mul},
+			 {"mod", m_mod},
+			 {"pchar", m_pchar},
+			 {"rotl", m_rotl},
+			 {"rotr", m_rotr},
+			 {"queue", m_queue},
+			 {"stack", m_stack},
 			 {NULL, NULL}
   };
   unsigned int i = 0;

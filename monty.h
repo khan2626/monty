@@ -65,5 +65,13 @@ void free_stack(stack_t *top);
 void addnode(stack_t **top, int n);
 int execute(char *data, stack_t **stack, unsigned int count, FILE *file);
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+void m_sub(stack_t **top, unsigned int count);
+void m_div(stack_t **top, unsigned int count);
+void m_mul(stack_t **top, unsigned int count);
+void m_mod(stack_t **top, unsigned int count);
+void m_pchar(stack_t **top, unsigned int count);
+void m_pstr(stack_t **top, unsigned int count);
+void m_rotl(stack_t **top, unsigned int count);
+void m_rotr(stack_t **top, unsigned int count);
 
 #endif
