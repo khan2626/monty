@@ -1,12 +1,14 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
-#include <stdio.h>
+
 #include <stdlib.h>
 #include <sys/types.h>
 #include <ctype.h>
 #include <fcntl.h>
 #include <string.h>
 #include <unistd.h>
+#include <stdio.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -51,14 +53,16 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-void add(stack_t **top, unsigned int count);
-void push(stack_t **top, unsigned int count);
-void swap(stack_t **top, unsigned int count);
-void pop(stack_t **top, unsigned int count);
-void pint(stack_t **top, unsigned int count);
-void pall(stack_t **top, unsigned int count);
-void nop(stack_t **head, unsigned int count);
+void m_add(stack_t **top, unsigned int count);
+void m_push(stack_t **top, unsigned int count);
+void m_swap(stack_t **top, unsigned int count);
+void m_pop(stack_t **top, unsigned int count);
+void m_pint(stack_t **top, unsigned int count);
+void m_pall(stack_t **top, unsigned int count);
+void m_nop(stack_t **head, unsigned int count);
 void addqueue(stack_t **top, unsigned int n);
 void free_stack(stack_t *top);
 void addnode(stack_t **top, int n);
+char getline(char **data, size_t *size, FILE *file);
+int execute(char *data, stack_t **stack, unsigned int count, FILE *file);
 #endif

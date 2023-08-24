@@ -6,7 +6,7 @@
  * @count: unused
  * Return: no return
  */
-void pall(stack_t **top, unsigned int count)
+void m_pall(stack_t **top, unsigned int count)
 {
   stack_t *temp;
   (void)count;

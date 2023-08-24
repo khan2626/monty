@@ -6,7 +6,7 @@
  * @count: it counts line_numb
  * Return: N0thing
  */
-void pint(stack_t **top, unsigned int count)
+void m_pint(stack_t **top, unsigned int count)
 {
   if (*top == NULL)
     {

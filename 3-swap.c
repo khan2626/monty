@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * f_swap - it swaps the first two element of stack
+ * m_swap - it swaps the first two element of stack
  * @top: pointer to top element of stack
  * @count: line_number
  * Return: Nothing
  */
-void swap(stack_t **top, unsigned int count)
+void m_swap(stack_t **top, unsigned int count)
 {
   int temp, length = 0;
   stack_t *h;
