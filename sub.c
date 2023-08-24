@@ -9,7 +9,7 @@
 
 void m_sub(stack_t **top, unsigned int count)
 {
-  stack_t *top;
+  stack_t *temp;
   int res, num_nodes;
 
   temp = *top;
@@ -18,12 +18,13 @@ void m_sub(stack_t **top, unsigned int count)
   if (num_nodes < 2)
     {
       fprintf(stderr, "L%d: Can't sub, stack too short\n", count);
-      fclose(build,file);
+      fclose(build.file);
       free(build.data);
       exit(EXIT_FAILURE);
     }
   temp = *top;
   res = temp->next->n - temp->n;
+  temp->next->n = res;
   *top = temp->next;
   free(temp);
 }

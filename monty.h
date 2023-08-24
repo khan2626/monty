@@ -73,5 +73,7 @@ void m_pchar(stack_t **top, unsigned int count);
 void m_pstr(stack_t **top, unsigned int count);
 void m_rotl(stack_t **top, unsigned int count);
 void m_rotr(stack_t **top, unsigned int count);
+void m_queue(stack_t **top, unsigned int count);
+void m_stack(stack_t **top, unsigned int count);
 
 #endif

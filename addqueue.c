@@ -1,6 +1,18 @@
 #include "monty.h"
 
 /**
+ * m_queue - prints the top element of stack
+ * @top: pointer to first element of stack
+ * @count: line number
+ */
+void m_queue(stack_t **top, unsigned int count)
+{
+  (void)top;
+  (void)count;
+  build.l = 1;
+}
+
+/**
  * addqueue - add node to rear of stack
  * @n: new value
  * @top: pointer to the first element of stack

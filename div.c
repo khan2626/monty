@@ -24,7 +24,7 @@ void m_div(stack_t **top, unsigned int count)
       exit(EXIT_FAILURE);
     }
   temp = *top;
-  if (temp_=->n == 0)
+  if (temp->n == 0)
     {
       fprintf(stderr, "L%d: division by zero\n", count);
       fclose(build.file);

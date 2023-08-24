@@ -10,7 +10,7 @@
 void m_pstr(stack_t **top, unsigned int count)
 {
   stack_t *temp;
-  (void)counter;
+  (void)count;
 
   temp = *top;
   while (temp)

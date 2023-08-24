@@ -9,14 +9,14 @@
 
 void m_rotl(stack_t **top, unsigned int count)
 {
-  stack_t *temp = *head, *aux;
+  stack_t *temp = *top, *aux;
   (void)count;
 
   if (*top == NULL || (*top)->next == NULL)
     {
       return;
     }
-  aux = (*head)->next;
+  aux = (*top)->next;
   aux->prev =NULL;
   while (temp->next != NULL)
     {
