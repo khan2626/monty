@@ -15,7 +15,7 @@ void m_pall(stack_t **top, unsigned int count)
 
   if (*top == NULL)
     return;
-  while (temp != NULL)
+  while (temp)
     {
       printf("%d\n", temp->n);
       temp = temp->next;
